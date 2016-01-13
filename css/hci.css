@@ -13,6 +13,14 @@ a, a:hover {
   color: #AAAAAA;
 }
 
+.top-buffer {
+  margin-top:20px;
+}
+
+#ex1Slider .slider-selection {
+  background: #BABABA;
+}
+
 /*
  * Navbar color customizations from http://smarchal.com/twbscolor/
  * http://smarchal.com/twbscolor/?bd=7d0512&bh=943943&cd=ecf0f1&ch=ffbbbc
