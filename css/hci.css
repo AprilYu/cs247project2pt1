@@ -6,7 +6,8 @@ small.notes {
 }
 
 a, a:hover {
-  color: #990615;
+  color: black;
+  font-size: 19px;
 }
 
 #calendar small {
