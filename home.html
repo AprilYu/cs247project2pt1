@@ -80,19 +80,19 @@
       <div class="row">
         <div class="col-xs-4" style="text-align: center;">
           <div class="button">
-            <a>Low</a>
+            <a class="power" id="low">Low</a>
           </div>
         </div>
 
         <div class="col-xs-4" style="text-align: center;">
           <div class="button">
-            <a>Med</a>
+            <a class="power" id="med">Med</a>
           </div>
         </div>
 
         <div class="col-xs-4" style="text-align: center;">
-          <div class="button">
-            <a>High</a>
+          <div class="button" style="background-color:red;">
+            <a class="power" id="high">High</a>
           </div>
         </div>
       </div>
@@ -133,22 +133,21 @@
   	<!-- Include all compiled plugins (below), or include individual files as needed -->
   	<script src="js/bootstrap.js"></script>
 
-    <script type="text/javascript">
-      $('#ex1').slider({
-        formatter: function(value) {
-          return 'Current value: ' + value;
-        }
+    <script>
+      $('#low').on("click", function () {
+        $('.power').parent().css("background-color", "transparent");
+        $(this).parent().css("background-color","yellow");
       });
 
-    // With JQuery
-      
+      $('#med').on("click", function () {
+        $('.power').parent().css("background-color", "transparent");
+        $(this).parent().css("background-color","orange");
+      });
 
-      // // Without JQuery
-      // var slider = new Slider('#ex1', {
-      //   formatter: function(value) {
-      //     return 'Current value: ' + value;
-      //   }
-      // });
+      $('#high').on("click", function () {
+        $('.power').parent('div').css("background-color", "transparent");
+        $(this).parent().css("background-color","red");
+      });
     </script>
   </body>
   </html>
